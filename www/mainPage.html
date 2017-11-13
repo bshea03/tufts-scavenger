@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/mainPage.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <!--<script src="cordova.js"></script>-->
+    <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=geometry"></script>-->
+    <!-- your app's js -->
+    <!--<script src="js/mainpage.js"></script>-->
+
+    <!--Google API-->
+
+    <script src="js/googleInit.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzoXqlRVSQzoUCwDeCwOBHMEqS-b7Wvto&libraries=geometry"></script>
+
+    <!-- your app's js -->
+    <script src="js/mainpage.js"></script>
+</head>
+<body ng-app="starter" ng-controller="huntControl" ng-init="init()">
+
+<ion-content>
+
+
+</ion-content>
+
+<ion-pane>
+    <ion-header-bar class="bar-stable">
+        <button class="button button-positive" ng-click="distPopup()">
+            Distance
+        </button>
+        <h1 class="title">TuftScavenger</h1>
+        <button class="button button-positive" ng-click="hintPopup()">
+            Hint
+        </button>
+    </ion-header-bar>
+    <ion-content>
+        <div id="map"></div>
+    <div class="tabs-striped tabs-icon-top tabs-color-assertive">
+        <div class="tabs">
+            <a class="tab-item" href="JumboTour.html">
+                <i class="icon ion-ios-world"></i>
+                JumboTour
+            </a>
+            <a class="tab-item active" href="#">
+                <i class="icon ion-map"></i>
+                TuftScavenger
+            </a>
+            <a class="tab-item" href="JumboQuiz.html">
+                <i class="icon ion-android-checkbox"></i>
+                JumboQuiz
+            </a>
+        </div>
+    </div>
+            </ion-content>
+</ion-pane>
+</body>
+</html>

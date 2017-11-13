@@ -1,0 +1,187 @@
+/* Empty. Add your own CSS if you like */
+#brownGrad {
+    margin-top: -0.69%;
+    padding-bottom: 4%;
+    background: -webkit-linear-gradient(bottom, rgba(171,137,121,0), rgba(171,137,121,1));
+    background: -o-linear-gradient(top, rgba(171,137,121,0), rgba(171,137,121,1));
+    background: -moz-linear-gradient(top, rgba(171,137,121,0), rgba(171,137,121,1));
+    background: linear-gradient(to top, rgba(171,137,121,0), rgba(171,137,121,1)); 
+}
+
+#brownWrapper {
+    background-color: #ab8979;
+}
+
+.bar.bar-header {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#CCCCCC, #88CCFF, #CCCCCC); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#FFFFFF, #88CCFF, #FFFFFF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FFFFFF, #88CCFF, #FFFFFF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#77BBFF, #88CCFF, #77BBFF); /* Standard syntax */
+    border-top: 1px solid #555555;
+    border-bottom: 1px solid #555555;
+    box-shadow: 1px 1px 1px #444444;
+}
+
+@media only screen
+and (max-device-width : 1279px) {
+    #skip {
+        width: 20%;
+    }
+}
+
+@media only screen
+and (min-device-width : 1280px) {
+    #skip {
+        width: 7%;
+    }
+}
+
+#greenGrad {
+    margin-top: -0.69%;
+    padding-bottom: 4%;
+    background: -webkit-linear-gradient(bottom, rgba(59,199,89,0), rgba(59,199,89,1));
+    background: -o-linear-gradient(top, rgba(59,199,89,0), rgba(59,199,89,1));
+    background: -moz-linear-gradient(top, rgba(59,199,89,0), rgba(59,199,89,1));
+    background: linear-gradient(to top, rgba(59,199,89,0), rgba(59,199,89,1));
+}
+
+#greenWrapper {
+    background-color: #59c759;
+}
+
+#yellowGrad {
+    margin-top: -0.69%;
+    padding-bottom: 4%;
+    background: -webkit-linear-gradient(bottom, rgba(255,255,0,0), rgba(255,255,0,1));
+    background: -o-linear-gradient(top, rgba(255,255,0,0), rgba(255,255,0,1));
+    background: -moz-linear-gradient(top, rgba(255,255,0,0), rgba(255,255,0,1));
+    background: linear-gradient(to top, rgba(255,255,0,0), rgba(255,255,0,1));
+}
+
+#yellowWrapper {
+    background-color: yellow;
+}
+
+.section-title {
+    font-weight: bold;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.section-body {
+    margin-top: -.69%;
+    margin-bottom: .69%;
+    padding-right: 15%;
+    padding-left: 15%;
+    font-weight: bold;
+}
+
+.slider {
+    height: 100%;
+    text-align: center;
+}
+
+.scroll {
+    height: 100%;
+}
+
+@media only screen
+and (max-device-width : 1279px) {
+    .welcomePage {
+        background-image: url("../screenshots/tufts.jpg");
+        background-position: 35% 40%;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+@media only screen
+and (min-device-width : 1280px) {
+    .welcomePage {
+        background-image: url("../screenshots/tufts.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+@media only screen
+and (max-device-width : 1279px) {
+    .scavengerPage {
+        background-image: url("../screenshots/west.jpg");
+        background-size: auto 100%;
+        background-position: center;
+        background-color: #ef473a;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media only screen
+and (min-device-width : 1280px) {
+    .scavengerPage {
+        background-image: url("../screenshots/west.jpg");
+        background-size: 100% 100%;
+        background-color: #ef473a;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media only screen
+and (max-device-width : 1279px) {
+    .otherPage {
+        background-image: url("../screenshots/raingarden.jpg");
+        background-size: auto 100%;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen
+and (min-device-width : 1280px) {
+    .otherPage {
+        background-image: url("../screenshots/raingarden.jpg");
+        background-size: 100%;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen
+and (max-device-width : 1279px) {
+    .goPage {
+        background-image: url("../screenshots/mem_steps.jpg");
+        background-size: auto 100%;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media only screen
+and (min-device-width : 1280px) {
+    .goPage {
+        background-image: url("../screenshots/mem_steps.jpg");
+        background-size: 100%;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+#go {
+    margin: 0 auto;
+    box-shadow: 2px 2px 2px #444444;
+    border: 1px #333333 solid;
+}
+

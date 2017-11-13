@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://maps.googleapis.com/ https://maps.gstatic.com/ https://mts0.googleapis.com/ 'unsafe-inline' 'unsafe-eval'">
+
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/tour.css" rel="stylesheet">
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <script src="js/googleInit.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1ew3WDtl4SeDX81t-uJEjpeb9PVoVj1U"></script>
+
+    <!-- your app's js -->
+    <script src="js/tour.js"></script>
+
+
+
+</head>
+<body ng-app="starter">
+
+<ion-pane>
+    <ion-content ng-controller="mapControl">
+        <!-- Search bar -->
+        <label class="item item-input" id="user-search">
+            <i class="ion ion-ios-search placeholder-icon"></i>
+            <input type='search' placeholder="search" ng-model="searchQuery"/>
+        </label>
+
+        <!-- Google Map -->
+        <div id="map"></div>
+
+        <!-- Repeatedly place markers-->
+        <div ng-repeat="item in data | filter: nameSearch(searchQuery)">{{createMarker(item)}}</div>
+
+    </ion-content>
+
+    <!-- Footer selection window -->
+    <div class="tabs-striped tabs-icon-top tabs-color-assertive">
+        <div class="tabs">
+            <a class="tab-item active" href="#">
+                <i class="icon ion-ios-world"></i>
+                JumboTour
+            </a>
+            <a class="tab-item" href="mainPage.html">
+                <i class="icon ion-map"></i>
+                TuftScavenger
+            </a>
+            <a class="tab-item" href="JumboQuiz.html">
+                <i class="icon ion-android-checkbox"></i>
+                JumboQuiz
+            </a>
+        </div>
+    </div>
+
+</ion-pane>
+</body>
+</html>

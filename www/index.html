@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <!--<script src="cordova.js"></script>-->
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+</head>
+<body ng-app="starter">
+
+<ion-pane>
+    <ion-header-bar class="bar-stable">
+        <h1 class="title">Welcome Jumbos!</h1>
+        <button class="button button-positive button-small" id="skip" onclick="redirectPage()">
+            Skip
+        </button>
+    </ion-header-bar>
+
+    <ion-content ng-controller="IntroController">
+        <!-- The entire slidebox-->
+        <!--TODO: Add skip button to each of the slide-->
+        <ion-slide-box pager-click="navSlide(index)">
+            <!-- Welcome Page -->
+            <ion-slide>
+                <div class="welcomePage">
+                    <div id="brownWrapper">
+                    <h1 class="section-title">Welcome to TuftScavenger!</h1>
+                    <p class="section-body">The purpose of this app is to give prospective students and new Jumbos a better way to get to know and find their way around our campus.</p>
+                    </div>
+                    <div id="brownGrad"><br></div>
+                </div>
+            </ion-slide>
+            <!-- Scavenger Hunt Intro Page -->
+            <ion-slide>
+                <div class="scavengerPage">
+                    <div id="greenWrapper">
+                    <h1 class="section-title">Take part in a Scavenger Hunt around Tufts!</h1>
+                    <p class="section-body">Using the Google Maps, TuftScavenger features a mobile-exclusive scavenger hunt consisting of a number of buildings and other landmarks around campus.</p>
+                    </div>
+                    <div id="greenGrad"><br></div>
+                </div>
+            </ion-slide>
+            <!-- Other Functions Intro Page-->
+            <ion-slide>
+                <div class="otherPage">
+                    <div id="yellowWrapper">
+                    <h1 class="section-title">Study in other ways!</h1>
+                    <p class="section-body">TuftScavenger is not just a mobile scavenger hunt app -- we're also Desktop-friendly! We have a number of quiz-style questions and flashcards to help you really get to know Tufts, as well an interactive map with locations listed on it so people on Desktop won't feel left out.</p>
+                    </div>
+                    <div id="yellowGrad"><br></div>
+                </div>
+            </ion-slide>
+            <!-- Go Page -->
+            <!--TODO: Add a button called start-->
+            <ion-slide>
+                <div class="goPage">
+                    <button class="button button-block button-positive" id="go" onclick="redirectPage()">
+                        Let's Explore!
+                    </button>
+                </div>
+            </ion-slide>
+        </ion-slide-box>
+
+    </ion-content>
+</ion-pane>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/tour.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/tour.js"></script>
+
+    <!--Google API-->
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?libraries=geometry&key=AIzaSyAvKBh4wvUwQ77Ieu_7B8JXlS33BuzzK1Y&callback=initMap"
+            type="text/javascript"></script>
+
+</head>
+<body ng-app="starter">
+
+<ion-pane>
+    <ion-header-bar class="bar-stable">
+        <h1 class="title">JumboTour</h1>
+    </ion-header-bar>
+    <ion-content ng-controller="mapControl">
+        <div id="map"></div>
+    </ion-content>
+    <div class="tabs-striped tabs-icon-top tabs-color-assertive">
+        <div class="tabs">
+            <a class="tab-item active" href="#">
+                <i class="icon ion-ios-world"></i>
+                JumboTour
+            </a>
+            <a class="tab-item" href="mainPage.html">
+                <i class="icon ion-map"></i>
+                TuftScavenger
+            </a>
+            <a class="tab-item" href="JumboQuiz.html">
+                <i class="icon ion-android-checkbox"></i>
+                JumboQuiz
+            </a>
+        </div>
+    </div>
+</ion-pane>
+</body>
+</html>
